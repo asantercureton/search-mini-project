@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="container">
+    <div class="card">
         <header id="containerHeader">
             <h1>Library of Congress Search Engine</h1>
         </header>
         <form id="searchForm">
-            <input id="search">Search</input>
-            <label id="label"></label>
-            <button id="button">Click Me</button>
+            <input id="siteSearch" type="search" placeholder="Search"></input>
+            <select name="format" id="formatSlt">
+                <option value="default">Select a Format</option>
+                <option value="maps">Maps</option>
+                <option value="audio">Audio</option>
+                <option value="">Photos</option>
+                <option value="Format4">Manuscripts</option>
+            </select>
+            <button id="button" type="submit">Click Me</button>
         </form>
     </div>
 </body>
